@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Miniproject.css">
+	<title></title>
+</head>
+<body>
+	<div id="container">
+	<div id="heading">
+    <span><u>Details Form</u></span></div>
+    <table class="f">
+<tr>
+<td><label><p>Name:</p></label>
+<td><input type="text" id="name" name="fname" minlength="3" style="width: 220px;"><br>
+</tr>
+
+ <tr>
+<td><label><p>Mob No. :</p></label>
+<td><input type="text" id=phone" name="phone" maxlength="10" pattern="^\d{10}$" style="width: 220px;" required><br>
+ </tr>
+
+ <tr>
+<td><label><p>Email ID :</p></label>
+<td><input type="text" id="email" pattern=".+@gmail.com" style="width: 220px;" required><br>
+</tr>
+ </table>
+ 
+	<button class="btn" onclick="validateForm()">SUBMIT</button>
+</div>
+</body>
+</html>
